@@ -14,6 +14,7 @@
 		52BB66652021742400CA3315 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52BB66632021742400CA3315 /* Main.storyboard */; };
 		52BB66672021742400CA3315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52BB66662021742400CA3315 /* Assets.xcassets */; };
 		52BB666A2021742400CA3315 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52BB66682021742400CA3315 /* LaunchScreen.storyboard */; };
+		52E1D0882022662D0008859C /* NameAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1D0872022662D0008859C /* NameAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		52BB66662021742400CA3315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52BB66692021742400CA3315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52BB666B2021742400CA3315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E1D0872022662D0008859C /* NameAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				52BB66662021742400CA3315 /* Assets.xcassets */,
 				52BB66682021742400CA3315 /* LaunchScreen.storyboard */,
 				52BB666B2021742400CA3315 /* Info.plist */,
+				52E1D0872022662D0008859C /* NameAlert.swift */,
 				5204674B202178D000530F8D /* Data Storage */,
 			);
 			path = "iOS Workshop";
@@ -152,6 +155,7 @@
 			files = (
 				520467572021840100530F8D /* BalanceModel.xcdatamodeld in Sources */,
 				52BB665E2021742400CA3315 /* AppDelegate.swift in Sources */,
+				52E1D0882022662D0008859C /* NameAlert.swift in Sources */,
 				5204675020217F8B00530F8D /* Database.swift in Sources */,
 				52BB66602021742400CA3315 /* RootViewController.swift in Sources */,
 			);
