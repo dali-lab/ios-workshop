@@ -28,4 +28,5 @@ Click the clone or download button. Click the "Open in Xcode" button and this wi
 ### Step 2: Your'e ready!
 iOS development is very handy in that it requires little to no configuration to get started, even on an existing project.
 
-## 
+### Follow the video
+The rest of the stuff we are gonna do is live in the workshop. Watch the video of it and follow along (not yet posted)
