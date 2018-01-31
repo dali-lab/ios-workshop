@@ -1,7 +1,7 @@
 # iOS Workshop
 Learn how to develop your very own apps in iOS in the young but powerful language Swift
 
-![poster](./assets/Poster.jpg)
+<img src="./assets/Poster.jpg" alt="poster" width="300">
 
 ## Getting Started
 Lets get started!
