@@ -13,7 +13,7 @@
         <relationship name="balance" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Balance" inverseName="storedTransactions" inverseEntity="Balance" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Balance" positionX="-270" positionY="-54" width="128" height="103"/>
-        <element name="Transaction" positionX="-54" positionY="9" width="126" height="103"/>
+        <element name="Balance" positionX="-270" positionY="-54" width="128" height="105"/>
+        <element name="Transaction" positionX="-261" positionY="-36" width="128" height="105"/>
     </elements>
 </model>
