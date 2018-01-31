@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D47" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Balance" representedClassName="Balance" syncable="YES" codeGenerationType="class">
+        <attribute name="createdAt" attributeType="Date" defaultDateTimeInterval="539069460" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" attributeType="String" defaultValueString="no-name" syncable="YES"/>
+        <attribute name="startingValue" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="storedTransactions" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Transaction" inverseName="balance" inverseEntity="Transaction" syncable="YES"/>
+    </entity>
+    <entity name="Transaction" representedClassName="Transaction" syncable="YES" codeGenerationType="class">
+        <attribute name="ammount" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="created" attributeType="Date" defaultDateTimeInterval="539069460" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="memo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="balance" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Balance" inverseName="storedTransactions" inverseEntity="Balance" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Balance" positionX="-270" positionY="-54" width="128" height="103"/>
+        <element name="Transaction" positionX="-54" positionY="9" width="126" height="103"/>
+    </elements>
+</model>
