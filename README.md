@@ -7,12 +7,12 @@ Learn how to develop your very own apps in iOS in the young but powerful languag
 Lets get started!
 
 ### Step 0: Install [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
-<center>![Xcode](https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/ec/c9/ac/ecc9ac2c-b358-82a8-10e0-64ad24056772/Xcode.png/246x0w.png)</center>
+![Xcode](https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/ec/c9/ac/ecc9ac2c-b358-82a8-10e0-64ad24056772/Xcode.png/246x0w.png)
 
 Once the app is installed, open and install tools if prompted.
 
 ## Part one: Swift
-<center>![Xcode](https://techvangelist.net/content/images/2017/07/appleswifticon.png)</center>
+![Xcode](https://techvangelist.net/content/images/2017/07/appleswifticon.png)
 
 In the Xcode start window select "Get started with a playground".
 
