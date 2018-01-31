@@ -16,7 +16,7 @@ Once the app is installed, open and install tools if prompted.
 
 In the Xcode start window select "Get started with a playground".
 
-![xcodestart](./assets/xcodestart.png)
+![xcodestart](./assets/xcodeStart.png)
 
 This will allow us to experiment with Swift syntax outside the context of an application. Explore the language, and take a look at [this](https://itunes.apple.com/us/book/the-swift-programming-language-swift-4-0-3/id881256329?mt=11) resource for a quick introduction to Swift.
 
