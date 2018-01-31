@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-func showNameAlert(on viewController: UIViewController, callback: (_ name: String) -> Void) {
+func showNameAlert(on viewController: UIViewController, callback: @escaping (_ name: String) -> Void) {
 	let alertController = UIAlertController(title: "Name the balace", message: nil, preferredStyle: .alert)
 	var textField: UITextField? = nil
 	alertController.addTextField { (field) in
