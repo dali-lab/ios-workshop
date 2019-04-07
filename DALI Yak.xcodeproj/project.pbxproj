@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		22DE3BC72755F5A17D20B6A5 /* Pods_DALI_Yak.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179018C645C5F49E0624C3BC /* Pods_DALI_Yak.framework */; };
 		523FA97A2252C79D001E12C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523FA9792252C79D001E12C9 /* AppDelegate.swift */; };
-		523FA97C2252C79D001E12C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523FA97B2252C79D001E12C9 /* ViewController.swift */; };
 		523FA97F2252C79D001E12C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523FA97D2252C79D001E12C9 /* Main.storyboard */; };
 		523FA9812252C79F001E12C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523FA9802252C79F001E12C9 /* Assets.xcassets */; };
 		523FA9842252C79F001E12C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523FA9822252C79F001E12C9 /* LaunchScreen.storyboard */; };
+		529FAA3A225AA1D000CA2054 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAA39225AA1D000CA2054 /* FeedViewController.swift */; };
+		529FAA3C225AA2D200CA2054 /* FeedViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAA3B225AA2D200CA2054 /* FeedViewControllerCell.swift */; };
+		529FAA40225AA33E00CA2054 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 529FAA3F225AA33E00CA2054 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +23,13 @@
 		39EB531349E6D889B1B7E276 /* Pods-DALI Yak.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DALI Yak.debug.xcconfig"; path = "Target Support Files/Pods-DALI Yak/Pods-DALI Yak.debug.xcconfig"; sourceTree = "<group>"; };
 		523FA9762252C79D001E12C9 /* DALI Yak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DALI Yak.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		523FA9792252C79D001E12C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		523FA97B2252C79D001E12C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		523FA97E2252C79D001E12C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		523FA9802252C79F001E12C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		523FA9832252C79F001E12C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		523FA9852252C79F001E12C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529FAA39225AA1D000CA2054 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		529FAA3B225AA2D200CA2054 /* FeedViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerCell.swift; sourceTree = "<group>"; };
+		529FAA3F225AA33E00CA2054 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,13 +74,31 @@
 			isa = PBXGroup;
 			children = (
 				523FA9792252C79D001E12C9 /* AppDelegate.swift */,
-				523FA97B2252C79D001E12C9 /* ViewController.swift */,
-				523FA97D2252C79D001E12C9 /* Main.storyboard */,
-				523FA9802252C79F001E12C9 /* Assets.xcassets */,
-				523FA9822252C79F001E12C9 /* LaunchScreen.storyboard */,
-				523FA9852252C79F001E12C9 /* Info.plist */,
+				529FAA3D225AA32400CA2054 /* UI */,
+				529FAA3E225AA32F00CA2054 /* Supporting Files */,
 			);
 			path = "DALI Yak";
+			sourceTree = "<group>";
+		};
+		529FAA3D225AA32400CA2054 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				523FA9802252C79F001E12C9 /* Assets.xcassets */,
+				523FA9822252C79F001E12C9 /* LaunchScreen.storyboard */,
+				529FAA39225AA1D000CA2054 /* FeedViewController.swift */,
+				529FAA3B225AA2D200CA2054 /* FeedViewControllerCell.swift */,
+				523FA97D2252C79D001E12C9 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		529FAA3E225AA32F00CA2054 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				523FA9852252C79F001E12C9 /* Info.plist */,
+				529FAA3F225AA33E00CA2054 /* GoogleService-Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		75CFC0DBDA9189AD65D27A0C /* Pods */ = {
@@ -149,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				523FA9842252C79F001E12C9 /* LaunchScreen.storyboard in Resources */,
+				529FAA40225AA33E00CA2054 /* GoogleService-Info.plist in Resources */,
 				523FA9812252C79F001E12C9 /* Assets.xcassets in Resources */,
 				523FA97F2252C79D001E12C9 /* Main.storyboard in Resources */,
 			);
@@ -214,8 +237,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				523FA97C2252C79D001E12C9 /* ViewController.swift in Sources */,
+				529FAA3A225AA1D000CA2054 /* FeedViewController.swift in Sources */,
 				523FA97A2252C79D001E12C9 /* AppDelegate.swift in Sources */,
+				529FAA3C225AA2D200CA2054 /* FeedViewControllerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +388,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JQ28K6Y7JE;
-				INFOPLIST_FILE = "DALI Yak/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DALI Yak/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,7 +407,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JQ28K6Y7JE;
-				INFOPLIST_FILE = "DALI Yak/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DALI Yak/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>236471029077-0d7eebo85e9f6cqh2qf1ehntc9vkhifn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.236471029077-0d7eebo85e9f6cqh2qf1ehntc9vkhifn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCKsTzZIma1dcKAjpg_nDp22LIdN9Tq77M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>236471029077</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>edu.dartmouth.edu.DALI-Yak</string>
+	<key>PROJECT_ID</key>
+	<string>daliyak-343e6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>daliyak-343e6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:236471029077:ios:4b3828e03a053977</string>
+	<key>DATABASE_URL</key>
+	<string>https://daliyak-343e6.firebaseio.com</string>
+</dict>
+</plist>
