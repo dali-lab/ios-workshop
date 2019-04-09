@@ -10,5 +10,7 @@ import Foundation
 import UIKit
 
 class FeedViewController: UITableViewController {
-    
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        // FJladksjfl; kasjfljaj
+//    }
 }
