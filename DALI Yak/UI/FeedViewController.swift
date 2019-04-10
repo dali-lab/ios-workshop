@@ -8,22 +8,25 @@
 
 import Foundation
 import UIKit
-import FirebaseFirestore
+import EmitterKit
 
 class FeedViewController: UITableViewController {
     var posts: [Post]?
-    var postListener: ListenerRegistration?
+    var postListener: Listener?
     
-    override func viewWillAppear(_ animated: Bool) {
-        Post.getAll { (posts, error) in
+    override func viewDidLoad() {
+        postListener = Post.postsChangedEvent.on { (posts) in
             self.posts = posts
             self.tableView.reloadData()
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        Post.startListeningForPosts()
+    }
+    
     override func viewDidDisappear(_ animated: Bool) {
-        postListener?.remove()
-        postListener = nil
+        Post.stopListeningForPosts()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -34,7 +37,7 @@ class FeedViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         
         if let cell = cell as? FeedViewControllerCell {
-            cell.post = nil
+            cell.post = posts?[indexPath.row]
         }
         
         return cell!
