@@ -19,6 +19,8 @@ class FeedViewController: UITableViewController {
             self.posts = posts
             self.tableView.reloadData()
         }
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 154
     }
     
     override func viewWillAppear(_ animated: Bool) {
