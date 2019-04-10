@@ -22,12 +22,12 @@ struct Reply {
         guard
             let data = snapshot.data(),
             let message = data["message"] as? String,
-            let createdAt = data["createdAt"] as? Date else {
+            let createdAt = data["createdAt"] as? Timestamp else {
                 return nil
         }
         
         self.message = message
-        self.createdAt = createdAt
+        self.createdAt = createdAt.dateValue()
         self.id = snapshot.documentID
     }
 }
