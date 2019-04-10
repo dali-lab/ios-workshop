@@ -143,6 +143,15 @@ class Post {
         postsListener?.remove()
     }
     
+    public func newReply(message: String, callback: @escaping (Error?) -> Void) {
+        ref.collection("Replies").addDocument(data: [
+            "message": message,
+            "createdAt": Date()
+        ]) { (error) in
+            callback(error)
+        }
+    }
+    
     // MARK: - Private
     
     private static var postsListener: ListenerRegistration?
