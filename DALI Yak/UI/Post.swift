@@ -17,6 +17,10 @@ struct Post {
     public let createdAt: Date
     /// The id of the post
     public let id: String
+    /// The number of replies
+    public let numReplies: Int
+    /// The number of votes
+    public let numVotes: Int
     
     /// Event to listen for changes to the replies
     public let repliesChangedEvent = Event<[Reply]>()
@@ -120,14 +124,16 @@ struct Post {
     private init?(data: [String: Any], id: String, ref: DocumentReference) {
         guard
             let message = data["message"] as? String,
-            let createdAt = data["createdAt"] as? Date else {
+            let createdAtTimeInterval = data["createdAt"] as? TimeInterval else {
                 return nil
         }
         
         self.ref = ref
         self.message = message
         self.id = id
-        self.createdAt = createdAt
+        self.createdAt = Date(timeIntervalSince1970: createdAtTimeInterval / 1000)
+        self.numVotes = 0
+        self.numReplies = 0
     }
     
     private init?(snapshot: DocumentSnapshot) {
