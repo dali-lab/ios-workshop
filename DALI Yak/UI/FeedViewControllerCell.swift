@@ -11,7 +11,7 @@ import UIKit
 import EmitterKit
 
 class FeedViewControllerCell: UITableViewCell {
-    @IBOutlet weak var textField: UITextView! // eg. "Hmmm. If only people started..."
+    @IBOutlet weak var messageLabel: UILabel! // eg. "Hmmm. If only people started..."
     @IBOutlet weak var numVotesLabel: UILabel! // eg. "357
     @IBOutlet weak var repliesLabel: UILabel! // eg. "31 replies"
     @IBOutlet weak var weeksLabel: UILabel!
@@ -34,7 +34,7 @@ class FeedViewControllerCell: UITableViewCell {
     }
     
     func update() {
-        textField.text = post?.message
+        messageLabel.text = post?.message
         repliesLabel.text = "\(post?.replies.count ?? 0) repies"
         numVotesLabel.text = "\(post?.numVotes ?? 0)"
         weeksLabel.text = post?.timeSinceText

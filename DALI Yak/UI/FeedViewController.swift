@@ -16,7 +16,9 @@ class FeedViewController: UITableViewController {
     
     override func viewDidLoad() {
         postListener = Post.postsChangedEvent.on { (posts) in
-            self.posts = posts
+            self.posts = posts.sorted(by: { (post1, post2) -> Bool in
+                return post1.numVotes > post2.numVotes
+            })
             self.tableView.reloadData()
         }
         tableView.rowHeight = UITableView.automaticDimension
@@ -25,10 +27,6 @@ class FeedViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         Post.startListeningForPosts()
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        Post.stopListeningForPosts()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
