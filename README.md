@@ -23,7 +23,7 @@ This will allow us to experiment with Swift syntax outside the context of an app
 ## Part 2: iOS App dev
 
 ### Step 1: Get the starter code
-Click the clone or download button. Click the "Open in Xcode" button and this will open it right in Xcode. If you are not using Safari or it doesn't show up, download zip file, unzip, and open "iOS Workshop.xcodeproj".
+Click the clone or download button. Click the "Open in Xcode" button and this will open it right in Xcode. If you are not using Safari or it doesn't show up, download zip file, unzip, and open "DALI Yak.xcodeproj".
 
 ### Step 2: Your'e ready!
 iOS development is very handy in that it requires little to no configuration to get started, even on an existing project.
