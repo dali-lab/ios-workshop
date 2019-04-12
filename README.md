@@ -12,7 +12,7 @@ Lets get started!
 Once the app is installed, open and install tools if prompted.
 
 ## Part one: Swift
-![Xcode](https://techvangelist.net/content/images/2017/07/appleswifticon.png)
+![Xcode](http://www.macosicongallery.com/icons/xcode-2015-03-13/512.png)
 
 In the Xcode start window select "Get started with a playground".
 
