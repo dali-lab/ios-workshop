@@ -16,7 +16,6 @@
 		529FAA3A225AA1D000CA2054 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAA39225AA1D000CA2054 /* FeedViewController.swift */; };
 		529FAA3C225AA2D200CA2054 /* FeedViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAA3B225AA2D200CA2054 /* FeedViewControllerCell.swift */; };
 		529FAA40225AA33E00CA2054 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 529FAA3F225AA33E00CA2054 /* GoogleService-Info.plist */; };
-		529FAA42225AA4CF00CA2054 /* FeedViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAA41225AA4CF00CA2054 /* FeedViewControllerExtensions.swift */; };
 		529FAA44225AA5E700CA2054 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAA43225AA5E700CA2054 /* Post.swift */; };
 		529FAA46225AB00C00CA2054 /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAA45225AB00C00CA2054 /* DatabaseController.swift */; };
 		529FAA50225BBA0600CA2054 /* Reply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAA4F225BBA0600CA2054 /* Reply.swift */; };
@@ -36,7 +35,6 @@
 		529FAA39225AA1D000CA2054 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		529FAA3B225AA2D200CA2054 /* FeedViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerCell.swift; sourceTree = "<group>"; };
 		529FAA3F225AA33E00CA2054 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		529FAA41225AA4CF00CA2054 /* FeedViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerExtensions.swift; sourceTree = "<group>"; };
 		529FAA43225AA5E700CA2054 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		529FAA45225AB00C00CA2054 /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
 		529FAA4F225BBA0600CA2054 /* Reply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reply.swift; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 				529FAA45225AB00C00CA2054 /* DatabaseController.swift */,
 				529FAA43225AA5E700CA2054 /* Post.swift */,
 				529FAA4F225BBA0600CA2054 /* Reply.swift */,
-				529FAA41225AA4CF00CA2054 /* FeedViewControllerExtensions.swift */,
 				5246E60F225D21C7002E308C /* WritePostViewController.swift */,
 				529FAA3B225AA2D200CA2054 /* FeedViewControllerCell.swift */,
 				523FA97D2252C79D001E12C9 /* Main.storyboard */,
@@ -279,7 +276,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5246E610225D21C7002E308C /* WritePostViewController.swift in Sources */,
-				529FAA42225AA4CF00CA2054 /* FeedViewControllerExtensions.swift in Sources */,
 				529FAA3A225AA1D000CA2054 /* FeedViewController.swift in Sources */,
 				529FAA46225AB00C00CA2054 /* DatabaseController.swift in Sources */,
 				523FA97A2252C79D001E12C9 /* AppDelegate.swift in Sources */,
