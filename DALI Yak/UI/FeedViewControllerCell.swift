@@ -35,7 +35,7 @@ class FeedViewControllerCell: UITableViewCell {
     
     func update() {
         messageLabel.text = post?.message
-        repliesLabel.text = "\(post?.replies.count ?? 0) repies"
+        repliesLabel.text = "\(post?.replies.count ?? 0) replies"
         numVotesLabel.text = "\(post?.numVotes ?? 0)"
         weeksLabel.text = post?.timeSinceText
     }
