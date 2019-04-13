@@ -20,6 +20,8 @@
 		529FAA46225AB00C00CA2054 /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAA45225AB00C00CA2054 /* DatabaseController.swift */; };
 		529FAA50225BBA0600CA2054 /* Reply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAA4F225BBA0600CA2054 /* Reply.swift */; };
 		C2C282242261636E0078E885 /* RepliesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C282232261636E0078E885 /* RepliesViewController.swift */; };
+		C2C2822622616EFF0078E885 /* RepliesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C2822522616EFF0078E885 /* RepliesTableViewController.swift */; };
+		C2C28228226177560078E885 /* ReplyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C28227226177560078E885 /* ReplyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		529FAA45225AB00C00CA2054 /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
 		529FAA4F225BBA0600CA2054 /* Reply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reply.swift; sourceTree = "<group>"; };
 		C2C282232261636E0078E885 /* RepliesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepliesViewController.swift; sourceTree = "<group>"; };
+		C2C2822522616EFF0078E885 /* RepliesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepliesTableViewController.swift; sourceTree = "<group>"; };
+		C2C28227226177560078E885 /* ReplyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 			children = (
 				529FAA39225AA1D000CA2054 /* FeedViewController.swift */,
 				C2C282232261636E0078E885 /* RepliesViewController.swift */,
+				C2C2822522616EFF0078E885 /* RepliesTableViewController.swift */,
+				C2C28227226177560078E885 /* ReplyTableViewCell.swift */,
 				529FAA45225AB00C00CA2054 /* DatabaseController.swift */,
 				529FAA43225AA5E700CA2054 /* Post.swift */,
 				529FAA4F225BBA0600CA2054 /* Reply.swift */,
@@ -280,11 +286,13 @@
 			files = (
 				5246E610225D21C7002E308C /* WritePostViewController.swift in Sources */,
 				C2C282242261636E0078E885 /* RepliesViewController.swift in Sources */,
+				C2C2822622616EFF0078E885 /* RepliesTableViewController.swift in Sources */,
 				529FAA3A225AA1D000CA2054 /* FeedViewController.swift in Sources */,
 				529FAA46225AB00C00CA2054 /* DatabaseController.swift in Sources */,
 				523FA97A2252C79D001E12C9 /* AppDelegate.swift in Sources */,
 				529FAA3C225AA2D200CA2054 /* FeedViewControllerCell.swift in Sources */,
 				529FAA44225AA5E700CA2054 /* Post.swift in Sources */,
+				C2C28228226177560078E885 /* ReplyTableViewCell.swift in Sources */,
 				529FAA50225BBA0600CA2054 /* Reply.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

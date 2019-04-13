@@ -56,9 +56,9 @@ class FeedViewController: UITableViewController {
     // MARK: - navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "toPostDetail") {
-            let repliesVC = segue.destination as! RepliesViewController
-            repliesVC.post = selectedPost
+        if segue.identifier == "toPostDetail" {
+            let repliesVC = segue.destination as? RepliesViewController
+            repliesVC!.post = selectedPost
         }
     }
 }
