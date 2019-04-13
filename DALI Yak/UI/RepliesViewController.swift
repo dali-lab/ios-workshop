@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EmitterKit
 
 class RepliesViewController: UIViewController, UITextFieldDelegate {
     
@@ -23,12 +24,20 @@ class RepliesViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var replyViewHeight: NSLayoutConstraint!
     
     // MARK: - variables
+    var replyListener: Listener?
     var post: Post!
+    var replies: [Reply]?
     var footerView: UIView!
     var replyView: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        replies = post.replies
+        
+        replyListener = post.repliesChangedEvent.on { (newReplies) in
+            self.replies = newReplies
+            self.repliesLabel.text = "\(self.replies?.count ?? 0) replies"
+        }
         
         replyField.delegate = self
         
