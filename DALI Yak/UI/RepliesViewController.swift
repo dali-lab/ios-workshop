@@ -89,7 +89,19 @@ class RepliesViewController: UIViewController, UITextFieldDelegate {
     // MARK: - actions
     
     @IBAction func didTapSend(_ sender: Any) {
-        print(replyField.text!)
+        post.newReply(message: replyField.text!) { (error) in
+            if error != nil {
+                let alert = UIAlertController(title: "Failed to reply",
+                                              message: "Something went wrong",
+                                              preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+            
+            self.replyField.text = ""
+    
+            self.dismissKeyboard()
+        }
     }
     
     // MARK: - segue
@@ -97,7 +109,10 @@ class RepliesViewController: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toRepliesTableView" {
             let repliesTableView = segue.destination as? RepliesTableViewController
-            repliesTableView!.replies = post.replies
+            repliesTableView?.post = post
+            repliesTableView?.replies = post.replies.sorted(by: { (reply1, reply2) -> Bool in
+                return reply1.createdAt > reply2.createdAt
+            })
         }
     }
 }

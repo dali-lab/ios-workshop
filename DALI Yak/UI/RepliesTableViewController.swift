@@ -7,14 +7,24 @@
 //
 
 import UIKit
+import EmitterKit
 
 class RepliesTableViewController: UITableViewController, UITextFieldDelegate {
     
     // MARK: - variables
-    var replies: [Reply]!
+    var replyListener: Listener?
+    var post: Post!
+    var replies: [Reply]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        replyListener = post.repliesChangedEvent.on { (newReplies) in
+            self.replies = newReplies.sorted(by: { (reply1, reply2) -> Bool in
+                return reply1.createdAt > reply2.createdAt
+            })
+            self.tableView.reloadData()
+        }
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -27,14 +37,17 @@ class RepliesTableViewController: UITableViewController, UITextFieldDelegate {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return replies.count
+        return replies?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "replyCell")
         
         if let cell = cell as? ReplyTableViewCell {
-           print("Fetched cell")
+            let reply = replies![indexPath.item]
+            
+            cell.message.text = reply.message
+            cell.createdAt.text = reply.timeSinceText
         }
         
         return cell!

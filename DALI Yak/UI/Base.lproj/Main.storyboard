@@ -222,8 +222,8 @@
                                     <constraint firstItem="vdc-FF-gpe" firstAttribute="bottom" secondItem="S2R-rm-cMc" secondAttribute="bottom" id="shs-Ha-F0Z"/>
                                 </constraints>
                             </view>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="chx-OP-4zV">
-                                <rect key="frame" x="0.0" y="242" width="414" height="654"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chx-OP-4zV">
+                                <rect key="frame" x="0.0" y="242" width="414" height="570"/>
                                 <connections>
                                     <segue destination="rhC-uK-JsY" kind="embed" identifier="toRepliesTableView" id="s5S-jc-XEX"/>
                                 </connections>
@@ -279,7 +279,7 @@
                             <constraint firstItem="chx-OP-4zV" firstAttribute="leading" secondItem="HK2-UM-Pks" secondAttribute="leading" id="cTs-AH-r4Z"/>
                             <constraint firstAttribute="bottom" secondItem="hmo-L4-2La" secondAttribute="bottom" id="g0s-bb-mgu"/>
                             <constraint firstItem="Ff4-gT-oA7" firstAttribute="leading" secondItem="HK2-UM-Pks" secondAttribute="leading" id="hM8-0X-VuQ"/>
-                            <constraint firstAttribute="bottom" secondItem="chx-OP-4zV" secondAttribute="bottom" constant="34" id="kaJ-nl-9rO"/>
+                            <constraint firstAttribute="bottom" secondItem="chx-OP-4zV" secondAttribute="bottom" constant="84" id="kaJ-nl-9rO"/>
                             <constraint firstItem="chx-OP-4zV" firstAttribute="trailing" secondItem="HK2-UM-Pks" secondAttribute="trailing" id="svJ-Pd-h9T"/>
                             <constraint firstItem="chx-OP-4zV" firstAttribute="top" secondItem="Ff4-gT-oA7" secondAttribute="bottom" id="vW9-xz-Yce"/>
                             <constraint firstItem="Ff4-gT-oA7" firstAttribute="trailing" secondItem="HK2-UM-Pks" secondAttribute="trailing" id="z7h-aX-ChC"/>
@@ -308,7 +308,7 @@
             <objects>
                 <tableViewController id="rhC-uK-JsY" customClass="RepliesTableViewController" customModule="DALI_Yak" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3wP-U2-bId">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="654"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="570"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
