@@ -30,4 +30,26 @@ struct Reply {
         self.createdAt = createdAt.dateValue()
         self.id = snapshot.documentID
     }
+    
+    /// A string simply describing how long it has been since this was posted
+    public var timeSinceText: String {
+        let timeInterval = Date().timeIntervalSince(createdAt)
+        let seconds = Float(timeInterval)
+        let minutes = seconds / 60.0
+        let hours = minutes / 60.0
+        let days = hours / 24.0
+        let weeks = days / 7.0
+        
+        if minutes < 1.0 { // Seconds
+            return "\(Int(seconds)) Second\(Int(seconds) != 1 ? "s" : "")"
+        } else if hours < 1.0 { // Minutes
+            return "\(Int(minutes)) Minute\(Int(minutes) != 1 ? "s" : "")"
+        } else if days < 1.0 { // Hours
+            return "\(Int(hours)) Hour\(Int(hours) != 1 ? "s" : "")"
+        } else if weeks < 1.0 { // Days
+            return "\(Int(days)) Day\(Int(days) != 1 ? "s" : "")"
+        } else { // Weeks
+            return "\(Int(weeks)) Week\(Int(weeks) != 1 ? "s" : "")"
+        }
+    }
 }
