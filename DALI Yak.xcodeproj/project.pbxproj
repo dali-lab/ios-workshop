@@ -123,8 +123,8 @@
 				529FAA3B225AA2D200CA2054 /* PostCell.swift */,
 				523FA97D2252C79D001E12C9 /* Main.storyboard */,
 				523FA9822252C79F001E12C9 /* LaunchScreen.storyboard */,
-				523A2CC22264F826005387B6 /* Auxilary Views */,
 				523FA9802252C79F001E12C9 /* Assets.xcassets */,
+				523A2CC22264F826005387B6 /* Auxilary Views */,
 			);
 			path = UI;
 			sourceTree = "<group>";
