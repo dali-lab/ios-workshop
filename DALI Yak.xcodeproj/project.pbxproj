@@ -66,10 +66,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		523A2CC12264F3F6005387B6 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				529FAA45225AB00C00CA2054 /* DatabaseController.swift */,
+				529FAA43225AA5E700CA2054 /* Post.swift */,
+				529FAA4F225BBA0600CA2054 /* Reply.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		523FA96D2252C79D001E12C9 = {
 			isa = PBXGroup;
 			children = (
 				523FA9782252C79D001E12C9 /* DALI Yak */,
+				523A2CC12264F3F6005387B6 /* Database */,
 				523FA9772252C79D001E12C9 /* Products */,
 				75CFC0DBDA9189AD65D27A0C /* Pods */,
 				4A5BC818F2899E8B07964107 /* Frameworks */,
@@ -101,9 +112,6 @@
 				C2C282232261636E0078E885 /* RepliesViewController.swift */,
 				C2C2822522616EFF0078E885 /* RepliesTableViewController.swift */,
 				C2C28227226177560078E885 /* ReplyTableViewCell.swift */,
-				529FAA45225AB00C00CA2054 /* DatabaseController.swift */,
-				529FAA43225AA5E700CA2054 /* Post.swift */,
-				529FAA4F225BBA0600CA2054 /* Reply.swift */,
 				5246E60F225D21C7002E308C /* WritePostViewController.swift */,
 				529FAA3B225AA2D200CA2054 /* FeedViewControllerCell.swift */,
 				523FA97D2252C79D001E12C9 /* Main.storyboard */,
@@ -441,7 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 42DSX83LH6;
+				DEVELOPMENT_TEAM = JQ28K6Y7JE;
 				INFOPLIST_FILE = "$(SRCROOT)/DALI Yak/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -460,7 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 42DSX83LH6;
+				DEVELOPMENT_TEAM = JQ28K6Y7JE;
 				INFOPLIST_FILE = "$(SRCROOT)/DALI Yak/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

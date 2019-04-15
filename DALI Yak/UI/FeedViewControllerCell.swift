@@ -23,7 +23,7 @@ class FeedViewControllerCell: UITableViewCell {
     var post: Post? {
         didSet {
             update()
-            listener = post?.repliesChangedEvent.on({ (replies) in
+            listener = post?.repliesChangedEvent.on({ (_) in
                 self.update()
             })
         }
