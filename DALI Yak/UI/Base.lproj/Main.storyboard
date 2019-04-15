@@ -319,10 +319,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IVo-Bb-3yN">
-                                            <rect key="frame" x="45" y="72" width="74" height="17"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="74" id="Txn-XV-H9M"/>
-                                            </constraints>
+                                            <rect key="frame" x="45" y="72" width="349" height="17"/>
                                             <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
                                             <color key="textColor" red="0.36862745099999999" green="0.81960784310000001" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -343,6 +340,7 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="IVo-Bb-3yN" firstAttribute="leading" secondItem="2NQ-oo-kIi" secondAttribute="trailing" constant="8" symbolic="YES" id="6hy-cN-mjL"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="IVo-Bb-3yN" secondAttribute="trailing" id="7lZ-KA-WVq"/>
                                         <constraint firstItem="cw6-Eu-elQ" firstAttribute="trailing" secondItem="1q8-RW-cLE" secondAttribute="trailingMargin" id="BcJ-xM-8X7"/>
                                         <constraint firstItem="2NQ-oo-kIi" firstAttribute="bottom" secondItem="1q8-RW-cLE" secondAttribute="bottomMargin" id="DdB-Rb-cct"/>
                                         <constraint firstItem="cw6-Eu-elQ" firstAttribute="leading" secondItem="2NQ-oo-kIi" secondAttribute="leading" id="OUG-Va-eA4"/>
