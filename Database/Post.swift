@@ -96,7 +96,10 @@ class Post: Hashable {
             let documents = snapshot.documents
             let posts = documents.compactMap({ (snapshot) -> Post? in
                 return Post(snapshot: snapshot)
+            }).sorted(by: { (post1, post2) -> Bool in
+                return post1.numVotes > post2.numVotes
             })
+            
             callback(posts, nil)
         }
     }
@@ -154,7 +157,10 @@ class Post: Hashable {
             
             let posts = snapshot.documents.compactMap({ (snapshot) -> Post? in
                 return Post(snapshot: snapshot)
+            }).sorted(by: { (post1, post2) -> Bool in
+                return post1.numVotes > post2.numVotes
             })
+            
             postsChangedEvent.emit(posts)
         })
     }

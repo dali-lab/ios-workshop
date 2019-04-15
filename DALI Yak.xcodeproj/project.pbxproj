@@ -14,7 +14,7 @@
 		523FA9842252C79F001E12C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523FA9822252C79F001E12C9 /* LaunchScreen.storyboard */; };
 		5246E610225D21C7002E308C /* WritePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5246E60F225D21C7002E308C /* WritePostViewController.swift */; };
 		529FAA3A225AA1D000CA2054 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAA39225AA1D000CA2054 /* FeedViewController.swift */; };
-		529FAA3C225AA2D200CA2054 /* FeedViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAA3B225AA2D200CA2054 /* FeedViewControllerCell.swift */; };
+		529FAA3C225AA2D200CA2054 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAA3B225AA2D200CA2054 /* PostCell.swift */; };
 		529FAA40225AA33E00CA2054 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 529FAA3F225AA33E00CA2054 /* GoogleService-Info.plist */; };
 		529FAA44225AA5E700CA2054 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAA43225AA5E700CA2054 /* Post.swift */; };
 		529FAA46225AB00C00CA2054 /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAA45225AB00C00CA2054 /* DatabaseController.swift */; };
@@ -36,7 +36,7 @@
 		523FA9852252C79F001E12C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5246E60F225D21C7002E308C /* WritePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritePostViewController.swift; sourceTree = "<group>"; };
 		529FAA39225AA1D000CA2054 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		529FAA3B225AA2D200CA2054 /* FeedViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerCell.swift; sourceTree = "<group>"; };
+		529FAA3B225AA2D200CA2054 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		529FAA3F225AA33E00CA2054 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		529FAA43225AA5E700CA2054 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		529FAA45225AB00C00CA2054 /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
@@ -76,6 +76,17 @@
 			path = Database;
 			sourceTree = "<group>";
 		};
+		523A2CC22264F826005387B6 /* Auxilary Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2C282232261636E0078E885 /* RepliesViewController.swift */,
+				C2C2822522616EFF0078E885 /* RepliesTableViewController.swift */,
+				C2C28227226177560078E885 /* ReplyTableViewCell.swift */,
+				5246E60F225D21C7002E308C /* WritePostViewController.swift */,
+			);
+			path = "Auxilary Views";
+			sourceTree = "<group>";
+		};
 		523FA96D2252C79D001E12C9 = {
 			isa = PBXGroup;
 			children = (
@@ -109,13 +120,10 @@
 			isa = PBXGroup;
 			children = (
 				529FAA39225AA1D000CA2054 /* FeedViewController.swift */,
-				C2C282232261636E0078E885 /* RepliesViewController.swift */,
-				C2C2822522616EFF0078E885 /* RepliesTableViewController.swift */,
-				C2C28227226177560078E885 /* ReplyTableViewCell.swift */,
-				5246E60F225D21C7002E308C /* WritePostViewController.swift */,
-				529FAA3B225AA2D200CA2054 /* FeedViewControllerCell.swift */,
+				529FAA3B225AA2D200CA2054 /* PostCell.swift */,
 				523FA97D2252C79D001E12C9 /* Main.storyboard */,
 				523FA9822252C79F001E12C9 /* LaunchScreen.storyboard */,
+				523A2CC22264F826005387B6 /* Auxilary Views */,
 				523FA9802252C79F001E12C9 /* Assets.xcassets */,
 			);
 			path = UI;
@@ -151,7 +159,7 @@
 				523FA9732252C79D001E12C9 /* Frameworks */,
 				523FA9742252C79D001E12C9 /* Resources */,
 				38EE8BAF0DFD27AFC1AA18C6 /* [CP] Embed Pods Frameworks */,
-				529FAA48225AB33F00CA2054 /* ShellScript */,
+				529FAA48225AB33F00CA2054 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -268,7 +276,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DALI Yak/Pods-DALI Yak-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		529FAA48225AB33F00CA2054 /* ShellScript */ = {
+		529FAA48225AB33F00CA2054 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,6 +285,7 @@
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -298,7 +307,7 @@
 				529FAA3A225AA1D000CA2054 /* FeedViewController.swift in Sources */,
 				529FAA46225AB00C00CA2054 /* DatabaseController.swift in Sources */,
 				523FA97A2252C79D001E12C9 /* AppDelegate.swift in Sources */,
-				529FAA3C225AA2D200CA2054 /* FeedViewControllerCell.swift in Sources */,
+				529FAA3C225AA2D200CA2054 /* PostCell.swift in Sources */,
 				529FAA44225AA5E700CA2054 /* Post.swift in Sources */,
 				C2C28228226177560078E885 /* ReplyTableViewCell.swift in Sources */,
 				529FAA50225BBA0600CA2054 /* Reply.swift in Sources */,
