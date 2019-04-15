@@ -119,7 +119,10 @@ class Post: Hashable {
             
             let replies = snapshot.documents.compactMap({ (snapshot) -> Reply? in
                 return Reply(snapshot: snapshot)
+            }).sorted(by: { (reply1, reply2) -> Bool in
+                return reply1.createdAt > reply2.createdAt
             })
+            
             self.replies = replies
             self.repliesChangedEvent.emit(replies)
         }

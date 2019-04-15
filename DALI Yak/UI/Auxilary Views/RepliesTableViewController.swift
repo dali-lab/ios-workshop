@@ -13,28 +13,26 @@ class RepliesTableViewController: UITableViewController, UITextFieldDelegate {
     
     // MARK: - variables
     var replyListener: Listener?
-    var post: Post!
     var replies: [Reply]?
+    var post: Post? {
+        didSet {
+            replyListener?.isListening = false
+            replyListener = post?.repliesChangedEvent.on { (newReplies) in
+                self.replies = newReplies
+                self.tableView.reloadData()
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        replyListener = post.repliesChangedEvent.on { (newReplies) in
-            self.replies = newReplies.sorted(by: { (reply1, reply2) -> Bool in
-                return reply1.createdAt > reply2.createdAt
-            })
-            self.tableView.reloadData()
-        }
-        
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.delegate = self
         tableView.dataSource = self
     }
 
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return replies?.count ?? 0
@@ -44,10 +42,7 @@ class RepliesTableViewController: UITableViewController, UITextFieldDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "replyCell")
         
         if let cell = cell as? ReplyTableViewCell {
-            let reply = replies![indexPath.item]
-            
-            cell.message.text = reply.message
-            cell.createdAt.text = reply.timeSinceText
+            cell.reply = replies?[indexPath.item]
         }
         
         return cell!

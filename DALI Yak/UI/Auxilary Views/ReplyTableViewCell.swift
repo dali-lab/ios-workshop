@@ -12,6 +12,13 @@ import EmitterKit
 class ReplyTableViewCell: UITableViewCell {
 
     // MARK: - outlets
-    @IBOutlet weak var message: UILabel!
-    @IBOutlet weak var createdAt: UILabel!
+    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var timeSinceLabel: UILabel!
+    
+    var reply: Reply? {
+        didSet {
+            messageLabel.text = reply?.message
+            timeSinceLabel.text = reply?.timeSinceText
+        }
+    }
 }
